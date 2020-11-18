@@ -40,4 +40,18 @@ h1 {
 p {
   font-size: 1.7rem;
 }
+
+/* Forms */
+input,
+textarea {
+  font-family: inherit;
+
+  /* Remove unwanted thick border-top on iOS devices */
+  background-clip: padding-box;
+}
+
+textarea {
+  resize: none;
+  border-radius: 0;
+}
 </style>
