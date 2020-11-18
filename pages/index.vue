@@ -115,7 +115,7 @@ export default {
       border: 0.1rem solid #d9d9d9;
       &:focus {
         outline: none;
-        border: 0.3rem solid #0088cc;
+        border: 0.3rem solid $primary__color;
       }
     }
     &-subject {
@@ -127,6 +127,10 @@ export default {
       width: 100%;
       padding: 1rem;
       font-size: 1.6rem;
+      &:focus {
+        outline: none;
+        border: 0.3rem solid $primary__color;
+      }
     }
   }
 }

@@ -36,11 +36,11 @@
     width: 45%;
     text-align: center;
     padding: 1.1rem 3.6rem;
-    border: 0.2rem solid #0088cc;
+    border: 0.2rem solid $primary__color;
     border-radius: 2rem;
     font-size: 1.6rem;
     font-weight: 700;
-    color: #0088cc;
+    color: $primary__color;
     text-decoration: none;
   }
   &__img {
