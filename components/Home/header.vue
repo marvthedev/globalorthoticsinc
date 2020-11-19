@@ -7,8 +7,9 @@
       >
     </h1>
     <p class="header__excerpt">
-      Our team of skilled technicians has over 20 years experience in
-      manufacturing the best quality orthotics that best fit your needs.
+      Our Orthotics are designed to create functional correction, regain foot
+      mechanical advantage, improve stability, and overall posture and
+      alignment.
     </p>
     <nuxt-link to="/about" class="header__btn">About Us</nuxt-link>
   </header>
@@ -16,7 +17,7 @@
 
 <style lang="scss">
 .header {
-  margin-top: 7rem;
+  margin-top: 9rem;
   display: flex;
   flex-direction: column;
   width: 100%;

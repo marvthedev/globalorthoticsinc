@@ -41,6 +41,11 @@ p {
   font-size: 1.7rem;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Forms */
 input,
 textarea {

@@ -4,9 +4,8 @@
     <homeHeader class="wrapper" />
     <section class="support">
       <h2 class="support__heading">
-        Our Orthotics are designed to create functional correction, regain foot
-        mechanical advantage, improve stability, and overall posture and
-        alignment.
+        Over 20 years of experience in manufacturing the best quality orthotics
+        that best fit your needs.
       </h2>
       <img src="~/assets/svg/support/support.svg" class="support__img" />
       <div class="support__contact">
@@ -77,11 +76,11 @@ export default {
   }
   &__heading {
     margin-left: 5%;
-    width: 65%;
-    line-height: 2.3rem;
+    width: 75%;
+    line-height: 3.7rem;
     position: relative;
-    top: 14.5rem;
-    font-size: 1.7rem;
+    top: 7rem;
+    font-size: 3.3rem;
   }
   &__contact {
     height: 100%;
