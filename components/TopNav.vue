@@ -7,25 +7,29 @@
           class="nav__logo-img"
         />
       </div>
-      <div class="nav__toggle">
-        <svg
-          class="nav__toggle-bars"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 448 512"
-        >
-          <path
-            d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
-          />
-        </svg>
+      <div class="nav__toggle" @click="menuOpened = true">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
-    <div class="nav__menu">
+    <div v-show="menuOpened" class="nav__menu">
       <nuxt-link to="/home" class="nav__menu-link">Home</nuxt-link>
       <nuxt-link to="/about" class="nav__menu-link">About</nuxt-link>
       <nuxt-link to="/home" class="nav__menu-link">Orthotics</nuxt-link>
     </div>
   </nav>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      menuOpened: false
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 .nav {
@@ -44,14 +48,19 @@
   }
   &__toggle {
     display: flex;
+    flex-direction: column;
+    height: 50%;
     background: $primary__color;
-    padding: 0.7rem 1.3rem;
-    height: 3.4rem;
+    padding: 0.7rem 1rem;
     border-radius: 0.25rem;
     cursor: pointer;
-    &-bars {
-      width: 1.2rem;
-      fill: white;
+    & span {
+      background: white;
+      width: 1.1rem;
+      height: 0.2rem;
+      margin: 0.12rem 0;
+      transition: all 0.4s ease;
+      transform-origin: 0 0;
     }
   }
   &__menu {

@@ -4,8 +4,8 @@
     <homeHeader class="wrapper" />
     <section class="support">
       <h2 class="support__heading">
-        Over 20 years of experience in manufacturing the best quality orthotics
-        that best fit your needs.
+        Over 20 years of experience
+        <span>in manufacturing Orthotics that suit your needs.</span>
       </h2>
       <img src="~/assets/svg/support/support.svg" class="support__img" />
       <div class="support__contact">
@@ -76,11 +76,14 @@ export default {
   }
   &__heading {
     margin-left: 5%;
-    width: 75%;
+    width: 90%;
     line-height: 3.7rem;
     position: relative;
-    top: 7rem;
-    font-size: 3.3rem;
+    top: 4rem;
+    font-size: 2.2rem;
+    & span {
+      font-weight: 400;
+    }
   }
   &__contact {
     height: 100%;
