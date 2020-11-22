@@ -44,7 +44,7 @@ export default {
   left: 0;
   background: white;
   &__container {
-    padding-top: 1.5rem;
+    padding: 1.5rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
