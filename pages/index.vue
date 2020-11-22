@@ -71,11 +71,8 @@ export default {
   margin-top: 6rem;
   width: 100%;
   font-size: 0;
-  &__img {
-    z-index: -1;
-    width: 100%;
-  }
   &__heading {
+    z-index: -1;
     margin-left: 5%;
     width: 90%;
     line-height: 3.3rem;
@@ -84,6 +81,10 @@ export default {
     font-size: 2.2rem;
     & span {
       font-weight: 400;
+    }
+    &__img {
+      z-index: -1;
+      width: 100%;
     }
   }
   &__contact {

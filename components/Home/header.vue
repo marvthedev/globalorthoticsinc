@@ -17,7 +17,7 @@
 
 <style lang="scss">
 .header {
-  margin-top: 9rem;
+  margin-top: 16rem;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -31,7 +31,7 @@
     font-weight: 300;
   }
   &__excerpt {
-    margin: 6rem 0 3rem 0;
+    margin: 6rem 0;
   }
   &__btn {
     width: 45%;

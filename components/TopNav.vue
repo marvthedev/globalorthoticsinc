@@ -7,10 +7,11 @@
           class="nav__logo-img"
         />
       </div>
-      <div class="nav__toggle" @click="menuOpened = true">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="nav__toggle" @click="menuOpened = !menuOpened">
+        <div
+          v-bind:class="{ nav__clicked: menuOpened }"
+          class="nav__toggle-bar"
+        ></div>
       </div>
     </div>
     <div v-show="menuOpened" class="nav__menu">
@@ -33,10 +34,17 @@ export default {
 
 <style lang="scss">
 .nav {
-  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: white;
   &__container {
+    padding-top: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,35 +57,67 @@ export default {
   }
   &__toggle {
     display: flex;
-    flex-direction: column;
-    height: 70%;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
     background: $primary__color;
-    padding: 0.7rem 1rem;
     border-radius: 0.25rem;
     cursor: pointer;
-    //Hamburger menu bars
-    & span {
-      background: white;
-      width: 1.5rem;
+    &-bar,
+    &-bar::before,
+    &-bar::after {
+      width: 1.7rem;
       height: 0.2rem;
-      margin: 0.2rem 0;
-      transition: all 0.4s ease;
-      transform-origin: 0 0;
+      background: white;
+      transition: all 0.5s ease-in-out;
+    }
+    &-bar::before,
+    &-bar::after {
+      content: '';
+      position: absolute;
+    }
+    &-bar::before {
+      transform: translateY(-0.5rem);
+    }
+    &-bar::after {
+      transform: translateY(0.5rem);
     }
   }
+
+  //Transform bars to an "X"
+  &__clicked {
+    transform: translateX(-0.4rem);
+    background: transparent;
+    &::before {
+      transform: rotate(45deg) translate(0.3rem, -0.3rem);
+    }
+    &::after {
+      transform: rotate(-45deg) translate(0.3rem, 0.3rem);
+    }
+  }
+
+  //Navigation menu that opens when hamburger button is clicked
   &__menu {
-    margin-top: 2rem;
+    z-index: 9999;
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 0 2rem;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    background: white;
+    margin: 1.5rem 0;
     &-link {
       font-size: 1.2rem;
       text-transform: uppercase;
       font-weight: 700;
       padding: 1rem;
-      border-bottom: 0.1rem solid #777;
       color: $primary__color;
+      &:not(:last-child) {
+        border-bottom: 1px solid #e8e8e8;
+      }
       &-hover {
         background: $primary__color;
         color: white;
