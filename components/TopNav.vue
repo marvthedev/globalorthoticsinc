@@ -38,6 +38,7 @@ export default {
   flex-direction: column;
   &__container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
   }
@@ -49,16 +50,17 @@ export default {
   &__toggle {
     display: flex;
     flex-direction: column;
-    height: 50%;
+    height: 70%;
     background: $primary__color;
     padding: 0.7rem 1rem;
     border-radius: 0.25rem;
     cursor: pointer;
+    //Hamburger menu bars
     & span {
       background: white;
-      width: 1.1rem;
+      width: 1.5rem;
       height: 0.2rem;
-      margin: 0.12rem 0;
+      margin: 0.2rem 0;
       transition: all 0.4s ease;
       transform-origin: 0 0;
     }

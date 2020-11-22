@@ -68,6 +68,7 @@ export default {
   padding: 0 5%;
 }
 .support {
+  margin-top: 6rem;
   width: 100%;
   font-size: 0;
   &__img {
@@ -77,9 +78,9 @@ export default {
   &__heading {
     margin-left: 5%;
     width: 90%;
-    line-height: 3.7rem;
+    line-height: 3.3rem;
     position: relative;
-    top: 4rem;
+    top: 3.5rem;
     font-size: 2.2rem;
     & span {
       font-weight: 400;

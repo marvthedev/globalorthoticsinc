@@ -31,7 +31,7 @@
     font-weight: 300;
   }
   &__excerpt {
-    margin: 6rem 0;
+    margin: 6rem 0 3rem 0;
   }
   &__btn {
     width: 45%;
