@@ -9,43 +9,19 @@
       </h2>
       <img src="~/assets/svg/support/support.svg" class="support__img" />
       <div class="support__contact">
-        <h2 class="support__contact-title">
-          Have Questions or Inquiries? <span>Send us a Message!</span>
+        <h2 class="support__contact-heading">
+          Have Questions or Inquiries? <span>Get in touch with us today!</span>
         </h2>
-        form
-        <form
-          id="support__form"
-          class="support__form"
-          name="contact"
-          method="POST"
-          action="/success"
-          netlify
-          netlify-honeypot="bot-field"
-        >
-          <input
-            type="text"
-            placeholder="Your Name"
-            name="name"
-            class="support__form-input"
+        <div class="support__email">
+          <img
+            src="~/assets/svg/support/email.svg"
+            class="support__email-img"
           />
-          <input
-            type="text"
-            placeholder="Your Email Address"
-            name="email"
-            class="support__form-input"
-          />
-          <input
-            type="text"
-            placeholder="Subject"
-            name="subject"
-            class="support__form-input support__form-subject"
-          />
-          <textarea
-            placeholder="How can we help you?"
-            name="message"
-            class="support__form-msg"
-          ></textarea>
-        </form>
+          <div class="support__email-txt">
+            <h2>Email Us</h2>
+            <a href="mailto:marvthedev@gmail.com">marvthedev@gmail.com</a>
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -94,7 +70,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    &-title {
+    &-heading {
       padding-top: 6rem;
       font-size: 3.3rem;
       text-align: center;
@@ -103,38 +79,11 @@ export default {
       }
     }
   }
-  &__form {
-    width: 100%;
-    padding: 0 5%;
-    margin-top: 3rem;
+  &__email {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    &-input {
-      width: 100%;
-      margin: 0.5rem 0;
-      padding: 1rem;
-      font-size: 1.6rem;
-      border: 0.1rem solid #d9d9d9;
-      &:focus {
-        outline: none;
-        border: 0.3rem solid $primary__color;
-      }
-    }
-    &-subject {
-      margin-top: 2rem;
-    }
-    &-msg {
-      margin-top: 0.5rem;
-      height: 25rem;
-      width: 100%;
-      padding: 1rem;
-      font-size: 1.6rem;
-      &:focus {
-        outline: none;
-        border: 0.3rem solid $primary__color;
-      }
+    &-img {
+      height: 4rem;
     }
   }
 }

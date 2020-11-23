@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav">
+  <nav class="nav" :class="{ nav__scroll: scrollPosition > 50 }">
     <div class="nav__container">
       <div class="nav__logo">
         <img
@@ -26,8 +26,17 @@
 export default {
   data() {
     return {
-      menuOpened: false
+      menuOpened: false,
+      scrollPosition: null
     }
+  },
+  methods: {
+    updateScroll() {
+      this.scrollPosition = window.scrollY
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.updateScroll)
   }
 }
 </script>
@@ -43,6 +52,10 @@ export default {
   top: 0;
   left: 0;
   background: white;
+  &__scroll {
+    box-shadow: 0 -0.5rem 1.5rem #212121;
+    background: rgba(255, 255, 255, 0.9);
+  }
   &__container {
     padding: 1.5rem 0;
     display: flex;
@@ -110,13 +123,13 @@ export default {
     background: white;
     margin: 1.5rem 0;
     &-link {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       text-transform: uppercase;
       font-weight: 700;
       padding: 1rem;
       color: $primary__color;
       &:not(:last-child) {
-        border-bottom: 1px solid #e8e8e8;
+        border-bottom: 0.1rem solid #e8e8e8;
       }
       &-hover {
         background: $primary__color;
