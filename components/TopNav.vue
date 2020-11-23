@@ -72,8 +72,8 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
     background: $primary__color;
     border-radius: 0.25rem;
     cursor: pointer;
