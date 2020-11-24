@@ -12,14 +12,31 @@
         <h2 class="support__contact-heading">
           Have Questions or Inquiries? <span>Get in touch with us today!</span>
         </h2>
+        <nuxt-link to="/about" class="support__contact-btn"
+          ><img
+            src="~/assets/svg/support/message.svg"
+            class="support__contact-btn-img"
+          />Send a Message</nuxt-link
+        >
         <div class="support__email">
           <img
             src="~/assets/svg/support/email.svg"
             class="support__email-img"
           />
           <div class="support__email-txt">
-            <h2>Email Us</h2>
-            <a href="mailto:marvthedev@gmail.com">marvthedev@gmail.com</a>
+            <h2>Send an email</h2>
+            <a href="mailto:marvthedev@gmail.com" class="support__email-address"
+              >marvthedev@gmail.com</a
+            >
+          </div>
+        </div>
+        <div class="support__call">
+          <img src="~/assets/svg/support/call.svg" class="support__call-img" />
+          <div class="support__call-txt">
+            <h2>Give us a call</h2>
+            <a href="mailto:marvthedev@gmail.com" class="support__call-number"
+              >(416) 297-0550</a
+            >
           </div>
         </div>
       </div>
@@ -65,25 +82,63 @@ export default {
   }
   &__contact {
     height: 100%;
-    padding-bottom: 10rem;
+    padding: 0 5% 10rem 5%;
     background: #d2deea;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+
     &-heading {
       padding-top: 6rem;
       font-size: 3.3rem;
-      text-align: center;
       & span {
         font-weight: 400;
       }
     }
+    &-btn {
+      margin: 3rem auto 0 auto;
+      width: 50%;
+      text-align: center;
+      padding: 1.1rem 3.6rem;
+      border: 0.2rem solid $primary__color;
+      border-radius: 2rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: $primary__color;
+      text-decoration: none;
+    }
   }
   &__email {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
     &-img {
       height: 4rem;
+    }
+    &-txt {
+      margin-left: 2rem;
+      font-size: 1.4rem;
+    }
+    &-address {
+      cursor: pointer;
+      font-size: 2.3rem;
+    }
+  }
+  &__call {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    &-img {
+      margin-left: 2.3rem;
+      height: 6rem;
+    }
+    &-txt {
+      margin-left: 2rem;
+      font-size: 1.4rem;
+    }
+    &-number {
+      cursor: pointer;
+      font-size: 2.3rem;
     }
   }
 }
