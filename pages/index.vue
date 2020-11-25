@@ -70,7 +70,7 @@ export default {
     width: 90%;
     line-height: 3.3rem;
     position: relative;
-    top: 3.5rem;
+    top: 3.2rem;
     font-size: 2.2rem;
     & span {
       font-weight: 400;
@@ -122,6 +122,7 @@ export default {
     &-address {
       cursor: pointer;
       font-size: 2.3rem;
+      color: $primary__color;
     }
   }
   &__call {
@@ -139,6 +140,7 @@ export default {
     &-number {
       cursor: pointer;
       font-size: 2.3rem;
+      color: $primary__color;
     }
   }
 }

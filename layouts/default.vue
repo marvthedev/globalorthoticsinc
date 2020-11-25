@@ -1,8 +1,24 @@
+<!--
+  1globalorthoticsinc by Marvin Marinas 
+  https://www.marvthe.dev | @marvthedev
+  Website and graphics design.
+-->
 <template>
   <div>
     <Nuxt />
+    <foot />
   </div>
 </template>
+
+<script>
+import foot from '~/components/Foot'
+
+export default {
+  modules: {
+    foot
+  }
+}
+</script>
 
 <style>
 html {
