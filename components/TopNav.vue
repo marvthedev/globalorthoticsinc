@@ -7,11 +7,16 @@
           class="nav__logo-img"
         />
       </div>
+      <!-- Only visible when viewing with mobile device. -->
       <div class="nav__toggle" @click="menuOpened = !menuOpened">
         <div
           v-bind:class="{ nav__clicked: menuOpened }"
           class="nav__toggle-bar"
         ></div>
+      </div>
+      <!-- Only visible when viewing with iPad Pro and Desktop. -->
+      <div class="nav__links">
+        <nuxt-link to="/about">About</nuxt-link>
       </div>
     </div>
     <div v-show="menuOpened" class="nav__menu">
@@ -30,13 +35,13 @@ export default {
       scrollPosition: null
     }
   },
+  mounted() {
+    window.addEventListener('scroll', this.updateScroll)
+  },
   methods: {
     updateScroll() {
       this.scrollPosition = window.scrollY
     }
-  },
-  mounted() {
-    window.addEventListener('scroll', this.updateScroll)
   }
 }
 </script>
@@ -137,12 +142,18 @@ export default {
       }
     }
   }
+  &__links {
+    display: none;
+  }
 }
 //Desktop View
 @media (min-width: 1248px) {
   .nav {
     &__toggle {
       display: none;
+    }
+    &__links {
+      display: flex;
     }
   }
 }
