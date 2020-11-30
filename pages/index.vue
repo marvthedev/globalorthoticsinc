@@ -144,4 +144,11 @@ export default {
     }
   }
 }
+
+//Desktop view
+@media (min-width: 1248px) {
+  .wrapper {
+    padding: 0 15.4rem;
+  }
+}
 </style>

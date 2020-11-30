@@ -16,13 +16,18 @@
       </div>
       <!-- Only visible when viewing with iPad Pro and Desktop. -->
       <div class="nav__links">
-        <nuxt-link to="/about">About</nuxt-link>
+        <nuxt-link to="/about" class="nav__links-item nav__links-item--home"
+          >Home</nuxt-link
+        >
+        <nuxt-link to="/about" class="nav__links-item">About</nuxt-link>
+        <nuxt-link to="/about" class="nav__links-item">Orthotics</nuxt-link>
+        <nuxt-link to="/about" class="nav__links-item">Contact</nuxt-link>
       </div>
     </div>
     <div v-show="menuOpened" class="nav__menu">
-      <nuxt-link to="/home" class="nav__menu-link">Home</nuxt-link>
-      <nuxt-link to="/about" class="nav__menu-link">About</nuxt-link>
-      <nuxt-link to="/home" class="nav__menu-link">Orthotics</nuxt-link>
+      <nuxt-link to="/home" class="nav__menu-item">Home</nuxt-link>
+      <nuxt-link to="/about" class="nav__menu-item">About</nuxt-link>
+      <nuxt-link to="/home" class="nav__menu-item">Orthotics</nuxt-link>
     </div>
   </nav>
 </template>
@@ -127,7 +132,7 @@ export default {
     bottom: 0;
     background: white;
     margin: 1.5rem 0;
-    &-link {
+    &-item {
       font-size: 1.4rem;
       text-transform: uppercase;
       font-weight: 700;
@@ -152,8 +157,19 @@ export default {
     &__toggle {
       display: none;
     }
+    //Navigation while viewing with bigger screens
     &__links {
       display: flex;
+      font-size: 1.8rem;
+      font-weight: 700;
+      &-item {
+        margin: 0 1.5rem;
+        text-transform: uppercase;
+        &--home,
+        &:hover {
+          color: $primary__color;
+        }
+      }
     }
   }
 }
