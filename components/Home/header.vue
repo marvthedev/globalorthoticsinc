@@ -23,6 +23,7 @@
   margin-top: 16rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   &__txt {
     display: flex;
@@ -48,15 +49,12 @@
     }
   }
   &__img {
-    height: 20rem;
+    margin-top: 6rem;
+    width: 90%;
   }
   &__sub-head {
     font-size: 3rem;
     font-weight: 300;
-  }
-  &__img {
-    margin-top: 3rem;
-    width: 100%;
   }
 }
 
@@ -69,11 +67,18 @@
     &__txt {
       &-btn {
         width: 30%;
+        :hover {
+          color: white;
+          background: blue;
+        }
       }
     }
     &__img {
       height: 40rem;
     }
+  }
+  .nuxt-link-active {
+    color: red;
   }
 }
 </style>
