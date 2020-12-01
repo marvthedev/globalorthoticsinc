@@ -14,7 +14,9 @@
       </p>
       <nuxt-link to="/about" class="header__txt-btn">About Us</nuxt-link>
     </div>
-    <img src="~/assets/svg/header/header-business.svg" class="header__img" />
+    <div class="header__img">
+      <img src="~/assets/svg/header/header-business.svg" />
+    </div>
   </header>
 </template>
 
@@ -23,13 +25,11 @@
   margin-top: 16rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
+  justify-content: center;
   &__txt {
     display: flex;
     flex-direction: column;
     &-title {
-      width: 90%;
       font-size: 3.3rem;
       line-height: 3.3rem;
     }
@@ -37,7 +37,7 @@
       margin: 4.5rem 0;
     }
     &-btn {
-      width: 45%;
+      width: 40%;
       text-align: center;
       padding: 1.1rem 3.6rem;
       border: 0.2rem solid $primary__color;
@@ -50,7 +50,10 @@
   }
   &__img {
     margin-top: 6rem;
-    width: 90%;
+    display: flex;
+    & img {
+      width: 100%;
+    }
   }
   &__sub-head {
     font-size: 3rem;
@@ -65,20 +68,25 @@
     align-items: center;
     padding: 0 15.4rem;
     &__txt {
+      padding-left: 7%;
+      width: 50%;
       &-btn {
         width: 30%;
-        :hover {
+        &:hover {
           color: white;
-          background: blue;
+          background: $primary__color;
         }
       }
     }
     &__img {
-      height: 40rem;
+      padding-right: 4%;
+      height: 100%;
+      width: 60%;
+      color: crimson;
+      & img {
+        height: 50rem;
+      }
     }
-  }
-  .nuxt-link-active {
-    color: red;
   }
 }
 </style>
