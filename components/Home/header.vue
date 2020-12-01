@@ -37,7 +37,7 @@
       margin: 4.5rem 0;
     }
     &-btn {
-      width: 40%;
+      width: 50%;
       text-align: center;
       padding: 1.1rem 3.6rem;
       border: 0.2rem solid $primary__color;

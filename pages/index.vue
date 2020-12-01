@@ -183,10 +183,11 @@ export default {
       margin-top: 12rem;
       flex-direction: row;
       width: 100%;
-
+      padding: 5rem 0;
       &-heading {
         width: 30%;
         margin: auto 0;
+        padding-top: 0;
       }
       &-links {
         margin-left: 2rem;
