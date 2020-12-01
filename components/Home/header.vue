@@ -50,7 +50,6 @@
   }
   &__img {
     margin-top: 6rem;
-    display: flex;
     & img {
       width: 100%;
     }
