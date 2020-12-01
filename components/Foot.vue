@@ -1,12 +1,6 @@
 <template>
   <footer class="footer">
     <div class="footer__copyright">
-      <p class="footer__copyright-txt">
-        © copyright 2020. All Rights Reserved. Website designed by
-        <a href="https://www.marvthe.dev>" class="footer__copyright-link"
-          >@marvthedev</a
-        >
-      </p>
       <div class="footer__copyright-social">
         <a
           href="http://www.twitter.com/marvthedev"
@@ -27,6 +21,12 @@
           />
         </a>
       </div>
+      <p class="footer__copyright-txt">
+        © copyright 2020. All Rights Reserved. Website designed by
+        <a href="https://www.marvthe.dev" class="footer__copyright-link"
+          >@marvthedev</a
+        >
+      </p>
     </div>
   </footer>
 </template>
@@ -36,17 +36,16 @@
   padding: 0 5%;
   background: #101c22;
   &__copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1.5rem 0;
-    &-txt {
-      font-size: 1rem;
-    }
     &-link {
       color: $primary__color;
       font-weight: 700;
       cursor: pointer;
     }
     &-social {
-      margin-top: 2rem;
       display: flex;
       &-icon {
         cursor: pointer;
@@ -56,6 +55,22 @@
         &:not(:first-child) {
           margin-left: 1rem;
         }
+      }
+    }
+    &-txt {
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+//Desktop view
+@media (min-width: 1248px) {
+  .footer {
+    &__copyright {
+      padding: 3rem 0;
+      &-txt {
+        font-size: 1.5rem;
       }
     }
   }

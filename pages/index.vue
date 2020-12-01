@@ -12,31 +12,38 @@
         <h2 class="support__contact-heading">
           Have Questions or Inquiries? <span>Get in touch with us today!</span>
         </h2>
-        <nuxt-link to="/about" class="support__contact-btn"
-          ><img
-            src="~/assets/svg/support/message.svg"
-            class="support__contact-btn-img"
-          />Send a Message</nuxt-link
-        >
-        <div class="support__email">
-          <img
-            src="~/assets/svg/support/email.svg"
-            class="support__email-img"
-          />
-          <div class="support__email-txt">
-            <h2>Send an email</h2>
-            <a href="mailto:marvthedev@gmail.com" class="support__email-address"
-              >marvthedev@gmail.com</a
-            >
+        <div class="support__contact-links">
+          <nuxt-link to="/about" class="support__contact-btn"
+            ><img
+              src="~/assets/svg/support/message.svg"
+              class="support__contact-btn-img"
+            />Send a Message</nuxt-link
+          >
+          <div class="support__email">
+            <img
+              src="~/assets/svg/support/email.svg"
+              class="support__email-img"
+            />
+            <div class="support__email-txt">
+              <h2>Send an email</h2>
+              <a
+                href="mailto:marvthedev@gmail.com"
+                class="support__email-address"
+                >marvthedev@gmail.com</a
+              >
+            </div>
           </div>
-        </div>
-        <div class="support__call">
-          <img src="~/assets/svg/support/call.svg" class="support__call-img" />
-          <div class="support__call-txt">
-            <h2>Give us a call</h2>
-            <a href="mailto:marvthedev@gmail.com" class="support__call-number"
-              >(416) 297-0550</a
-            >
+          <div class="support__call">
+            <img
+              src="~/assets/svg/support/call.svg"
+              class="support__call-img"
+            />
+            <div class="support__call-txt">
+              <h2>Give us a call</h2>
+              <a href="mailto:marvthedev@gmail.com" class="support__call-number"
+                >(416) 297-0550</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -87,6 +94,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     &-heading {
       padding-top: 6rem;
@@ -94,6 +102,10 @@ export default {
       & span {
         font-weight: 400;
       }
+    }
+    &-links {
+      display: flex;
+      flex-direction: column;
     }
     &-btn {
       margin: 3rem auto 0 auto;
@@ -148,7 +160,38 @@ export default {
 //Desktop view
 @media (min-width: 1248px) {
   .wrapper {
-    padding: 0 15.4rem;
+    padding: 0 10%;
+  }
+  .support {
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__heading {
+      margin-left: 0;
+      position: static;
+      width: 60%;
+      line-height: 6rem;
+      text-align: center;
+      font-size: 4rem;
+    }
+    &__img {
+      display: none;
+    }
+    &__contact {
+      margin-top: 12rem;
+      flex-direction: row;
+      width: 100%;
+
+      &-heading {
+        width: 30%;
+        margin: auto 0;
+      }
+      &-links {
+        margin-left: 2rem;
+      }
+    }
   }
 }
 </style>
