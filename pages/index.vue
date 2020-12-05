@@ -1,6 +1,5 @@
 <template>
   <div class="index">
-    <topNav class="wrapper" />
     <homeHeader class="wrapper" />
     <section class="support">
       <h2 class="support__heading">
@@ -52,12 +51,10 @@
 </template>
 
 <script>
-import topNav from '~/components/TopNav'
 import homeHeader from '~/components/Home/header'
 
 export default {
   components: {
-    topNav,
     homeHeader
   }
 }
@@ -77,7 +74,7 @@ export default {
     width: 90%;
     line-height: 3.3rem;
     position: relative;
-    top: 3.2rem;
+    top: 2.5rem;
     font-size: 2.2rem;
     & span {
       font-weight: 400;

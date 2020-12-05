@@ -25,7 +25,7 @@
       </div>
     </div>
     <div v-show="menuOpened" class="nav__menu">
-      <nuxt-link to="/home" class="nav__menu-item">Home</nuxt-link>
+      <nuxt-link to="/" class="nav__menu-item">Home</nuxt-link>
       <nuxt-link to="/about" class="nav__menu-item">About</nuxt-link>
       <nuxt-link to="/home" class="nav__menu-item">Orthotics</nuxt-link>
     </div>
@@ -53,6 +53,7 @@ export default {
 
 <style lang="scss">
 .nav {
+  padding: 0 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;

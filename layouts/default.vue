@@ -5,16 +5,19 @@
 -->
 <template>
   <div>
+    <topNav />
     <Nuxt />
     <foot />
   </div>
 </template>
 
 <script>
+import topNav from '~/components/TopNav'
 import foot from '~/components/Foot'
 
 export default {
-  modules: {
+  components: {
+    topNav,
     foot
   }
 }
@@ -32,6 +35,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
 }
 
 *,
