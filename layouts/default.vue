@@ -37,10 +37,6 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  min-height: 100%;
-}
-
 *,
 *::before,
 *::after {

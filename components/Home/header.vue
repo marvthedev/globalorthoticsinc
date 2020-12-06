@@ -70,7 +70,7 @@
       padding-left: 7%;
       width: 50%;
       &-btn {
-        width: 30%;
+        width: 40%;
         &:hover {
           color: white;
           background: $primary__color;

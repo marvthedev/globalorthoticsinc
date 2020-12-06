@@ -16,7 +16,7 @@
       </div>
       <!-- Only visible when viewing with iPad Pro and Desktop. -->
       <div class="nav__links">
-        <nuxt-link to="/about" class="nav__links-item nav__links-item--home"
+        <nuxt-link to="/" class="nav__links-item nav__links-item--home"
           >Home</nuxt-link
         >
         <nuxt-link to="/about" class="nav__links-item">About</nuxt-link>
