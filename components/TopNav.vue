@@ -24,7 +24,12 @@
         <nuxt-link to="/about" class="nav__links-item">Contact</nuxt-link>
       </div>
     </div>
-    <div v-show="menuOpened" class="nav__menu">
+    <!-- Only visible when viewing smaller devices. -->
+    <div
+      v-show="menuOpened"
+      @click="menuOpened = !menuOpened"
+      class="nav__menu"
+    >
       <nuxt-link to="/" class="nav__menu-item">Home</nuxt-link>
       <nuxt-link to="/about" class="nav__menu-item">About</nuxt-link>
       <nuxt-link to="/home" class="nav__menu-item">Orthotics</nuxt-link>

@@ -31,7 +31,7 @@
   min-height: 100vh;
   &__img {
     width: 100%;
-    height: 15rem;
+    height: 20rem;
     object-fit: cover;
   }
   &__txt-container {
