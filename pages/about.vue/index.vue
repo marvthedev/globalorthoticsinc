@@ -47,7 +47,7 @@
     margin-top: 3rem;
     padding: 0 5%;
     line-height: 3rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 

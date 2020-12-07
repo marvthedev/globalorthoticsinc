@@ -57,7 +57,8 @@ h1 {
 }
 
 p {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+  line-height: 3rem;
 }
 
 a {

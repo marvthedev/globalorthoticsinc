@@ -25,8 +25,8 @@
           >Home</nuxt-link
         >
         <nuxt-link to="/about" class="nav__links-item">About</nuxt-link>
-        <nuxt-link to="/about" class="nav__links-item">Orthotics</nuxt-link>
-        <nuxt-link to="/about" class="nav__links-item">Contact</nuxt-link>
+        <nuxt-link to="/orthotics" class="nav__links-item">Orthotics</nuxt-link>
+        <nuxt-link to="/contact" class="nav__links-item">Contact</nuxt-link>
       </div>
     </div>
     <!-- Only visible when viewing smaller devices. -->
@@ -37,7 +37,7 @@
     >
       <nuxt-link to="/" class="nav__menu-item">Home</nuxt-link>
       <nuxt-link to="/about" class="nav__menu-item">About</nuxt-link>
-      <nuxt-link to="/home" class="nav__menu-item">Orthotics</nuxt-link>
+      <nuxt-link to="/orthotics" class="nav__menu-item">Orthotics</nuxt-link>
     </div>
   </nav>
 </template>
