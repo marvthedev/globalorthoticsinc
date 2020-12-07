@@ -1,17 +1,19 @@
 <template>
   <nav class="nav" :class="{ nav__scroll: scrollPosition > 50 }">
     <div class="nav__container">
-      <div class="nav__logo">
-        <img
-          src="~/assets/svg/nav/global-orthotics-inc-logo.svg"
-          class="nav__logo-img"
-        />
-        <div class="nav__logo-txt">
-          <span>Global</span>
-          <span>Orthotics</span>
-          <span>Inc.</span>
+      <nuxt-link to="/">
+        <div class="nav__logo">
+          <img
+            src="~/assets/svg/nav/global-orthotics-inc-logo.svg"
+            class="nav__logo-img"
+          />
+          <div class="nav__logo-txt">
+            <span>Global</span>
+            <span>Orthotics</span>
+            <span>Inc.</span>
+          </div>
         </div>
-      </div>
+      </nuxt-link>
       <!-- Only visible when viewing with mobile device. -->
       <div class="nav__toggle" @click="menuOpened = !menuOpened">
         <div
