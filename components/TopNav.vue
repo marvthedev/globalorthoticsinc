@@ -6,6 +6,11 @@
           src="~/assets/svg/nav/global-orthotics-inc-logo.svg"
           class="nav__logo-img"
         />
+        <div class="nav__logo-txt">
+          <span>Global</span>
+          <span>Orthotics</span>
+          <span>Inc.</span>
+        </div>
       </div>
       <!-- Only visible when viewing with mobile device. -->
       <div class="nav__toggle" @click="menuOpened = !menuOpened">
@@ -80,8 +85,19 @@ export default {
     width: 100%;
   }
   &__logo {
+    display: flex;
+    align-items: center;
     &-img {
       height: 4rem;
+    }
+    &-txt {
+      margin-left: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      font-size: 1.6rem;
+      color: $primary__color;
+      font-weight: 700;
+      line-height: 1.5rem;
     }
   }
   &__toggle {

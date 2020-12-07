@@ -23,7 +23,7 @@
 
 <style lang="scss">
 .about {
-  margin: 2rem 0;
+  margin: 2rem 0 5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
