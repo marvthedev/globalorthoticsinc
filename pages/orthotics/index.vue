@@ -21,7 +21,7 @@
           />
           <p>
             <span>Arthritis.</span> Orthotics can treat discomfort in the feet
-            and correct poor positioning.
+            and correct poor foot positioning.
           </p>
         </li>
         <li class="orthotics__txt-list-item">
@@ -34,6 +34,49 @@
             inward-rolling arches, or poor cushioning can cause lower back pain.
             Orthotics can provide cushioning and correct arches to lessen this
             pain.
+          </p>
+        </li>
+        <li class="orthotics__txt-list-item">
+          <img
+            src="~/assets/img/orthotics/check-icon.svg"
+            class="orthotics__txt-list-item-icon"
+          />
+          <p>
+            <span>Diabetes.</span> Orthotics help reduce excess stress that
+            leads to foot ulcers.
+          </p>
+        </li>
+        <li class="orthotics__txt-list-item">
+          <img
+            src="~/assets/img/orthotics/check-icon.svg"
+            class="orthotics__txt-list-item-icon"
+          />
+          <p>
+            <span>Flat feet.</span> Orthotics help support proper foot
+            positioning to prevent foot, ankle and back pain caused by flat
+            feet.
+          </p>
+        </li>
+        <li class="orthotics__txt-list-item">
+          <img
+            src="~/assets/img/orthotics/check-icon.svg"
+            class="orthotics__txt-list-item-icon"
+          />
+          <p>
+            <span>Plantar fasciitis.</span> As a common cause of heel pain,
+            Orthotics are used to support the heel and foot.
+          </p>
+        </li>
+        <li class="orthotics__txt-list-item">
+          <img
+            src="~/assets/img/orthotics/check-icon.svg"
+            class="orthotics__txt-list-item-icon"
+          />
+          <p>
+            <span>High arches.</span> This can cause shin splints, plantar
+            fasciitis and knee pain due to the high amount of stress placed on
+            the muscles in the feet. Orthotics are used to prevent a person's
+            feet from excessively rolling inward or outward.
           </p>
         </li>
       </ul>
