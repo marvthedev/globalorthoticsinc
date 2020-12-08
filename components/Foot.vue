@@ -23,7 +23,7 @@
 
         <!-- Facebook Social Icon -->
         <a
-          href="http://www.facebook.com/marvthedev"
+          href="https://www.facebook.com/Global-Orthotics-Inc-103159911580758/"
           class="footer__copyright-social-link"
         >
           <svg

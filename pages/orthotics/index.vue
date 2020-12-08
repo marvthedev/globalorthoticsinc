@@ -92,15 +92,15 @@
   align-items: center;
   min-height: 90vh;
   width: 100%;
-  padding: 0 4%;
   &__img {
     width: 100%;
-    margin-bottom: 2rem;
+    padding: 0 4%;
   }
   &__txt {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 4%;
     &-title {
       font-size: 2.6rem;
       margin: 4rem 0 2rem 0;
@@ -124,6 +124,35 @@
         & span {
           margin-left: 1rem;
           font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+//Desktop view
+@media (min-width: 1248px) {
+  .orthotics {
+    &__img {
+      height: 30rem;
+      object-fit: cover;
+      padding: 0 0;
+    }
+    &__txt {
+      width: 50%;
+      &-title {
+        margin: 7rem 0 2rem 0;
+        font-size: 3.3rem;
+      }
+      & p {
+        font-size: 2.2rem;
+      }
+      &-list {
+        margin-top: 4rem;
+        &-item {
+          &:not(:first-child) {
+            margin-top: 4rem;
+          }
         }
       }
     }

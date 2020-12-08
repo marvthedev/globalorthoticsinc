@@ -87,7 +87,7 @@ export default {
   &__contact {
     height: 100%;
     padding: 0 5% 10rem 5%;
-    background: #d2deea;
+    background: #f9f9f9;
     display: flex;
     flex-direction: column;
     justify-content: center;
