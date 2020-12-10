@@ -77,6 +77,5 @@ textarea {
 
 textarea {
   resize: none;
-  border-radius: 0;
 }
 </style>

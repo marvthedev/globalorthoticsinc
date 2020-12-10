@@ -86,7 +86,7 @@
 
 <style lang="scss">
 .orthotics {
-  margin: 10rem 0 5rem 0;
+  margin: 10rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
