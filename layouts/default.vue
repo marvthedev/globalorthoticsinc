@@ -73,6 +73,7 @@ textarea {
 
   /* Remove unwanted thick border-top on iOS devices */
   background-clip: padding-box;
+  -webkit-appearance: none;
   border-top: 0;
 }
 
