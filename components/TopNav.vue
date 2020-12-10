@@ -155,7 +155,7 @@ export default {
     position: relative;
     left: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.5);
     margin: 1.5rem 0;
     &-item {
       font-size: 1.4rem;
