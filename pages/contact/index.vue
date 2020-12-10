@@ -90,20 +90,20 @@
     }
     &-name {
       display: flex;
-      column-gap: 1rem;
       justify-content: center;
       width: 100%;
       &-first,
       &-last {
+        margin: 0 0.5rem;
         width: 50%;
       }
     }
     &-phone {
       display: flex;
-      column-gap: 1rem;
       &-first,
       &-second,
       &-third {
+        margin: 0 0.5rem;
         width: 25%;
       }
     }
