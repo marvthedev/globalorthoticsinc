@@ -110,6 +110,7 @@
     &-message {
       overflow: auto;
       min-height: 10rem;
+      background-clip: padding-box;
     }
   }
 }
