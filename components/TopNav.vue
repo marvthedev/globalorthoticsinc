@@ -31,7 +31,7 @@
         <nuxt-link to="/contact" class="nav__links-item">Contact</nuxt-link>
       </div>
     </div>
-    <!-- Only visible when viewing smaller devices. -->
+    <!-- Only visible when viewing with smaller devices. -->
     <div
       v-show="menuOpened"
       @click="menuOpened = !menuOpened"
@@ -40,6 +40,7 @@
       <nuxt-link to="/" class="nav__menu-item">Home</nuxt-link>
       <nuxt-link to="/about" class="nav__menu-item">About</nuxt-link>
       <nuxt-link to="/orthotics" class="nav__menu-item">Orthotics</nuxt-link>
+      <nuxt-link to="/contact" class="nav__menu-item">Contact</nuxt-link>
     </div>
   </nav>
 </template>
