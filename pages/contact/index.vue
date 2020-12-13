@@ -34,14 +34,11 @@
       />
 
       <!-- Message field -->
-      <label for="contact__form-message" class="contact__form-message-title"
+      <label for="contact__form-msg" class="contact__form-msg-title"
         >Message *</label
       >
-      <textarea
-        type="text"
-        id="contact__form-message"
-        class="contact__form-message"
-      />
+      <textarea type="text" id="contact__form-msg" class="contact__form-msg" />
+      <input type="submit" class="contact__form-btn" value="submit" />
     </form>
   </div>
 </template>
@@ -69,9 +66,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    & input:focus {
+      border-color: $primary__color;
+    }
     & fieldset,
     &-email-title,
-    &-message-title {
+    &-msg-title {
       margin-top: 2.5rem;
     }
     & legend,
@@ -79,13 +79,18 @@
       font-size: 1.8rem;
       color: black;
       font-weight: 700;
+      margin-bottom: 0.5rem;
     }
-    & input,
-    & textarea {
+    &-name-first,
+    &-name-last,
+    &-phone-first,
+    &-phone-second,
+    &-phone-third,
+    &-email-address,
+    &-msg {
       border: 1px solid #ccc;
       background: #fafafa;
-      padding: 1.2rem 1.2rem;
-      margin-top: 0.5rem;
+      padding: 1.2rem;
       border-radius: 0.2rem;
     }
     &-name {
@@ -94,8 +99,10 @@
       width: 100%;
       &-first,
       &-last {
-        margin: 0 0.5rem;
         width: 50%;
+      }
+      &-last {
+        margin-left: 0.5rem;
       }
     }
     &-phone {
@@ -103,14 +110,42 @@
       &-first,
       &-second,
       &-third {
-        margin: 0 0.5rem;
         width: 25%;
       }
+      &-second,
+      &-third {
+        margin-left: 0.5rem;
+      }
     }
-    &-message {
+    &-msg {
       overflow: auto;
       min-height: 10rem;
       background-clip: padding-box;
+    }
+    &-btn {
+      margin-top: 5rem;
+      padding: 1.2rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      width: 50%;
+      background-color: $primary__color;
+      color: white;
+    }
+  }
+}
+
+//Desktop View
+@media (min-width: 1248px) {
+  .contact {
+    padding: 0 30% 15rem 30%;
+    &__form {
+      &-btn {
+        width: 20%;
+        &:hover {
+          background: #0af;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
