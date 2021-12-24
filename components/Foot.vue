@@ -43,8 +43,8 @@
       <p class="footer__copyright-txt">
         © copyright 2020 Global Orthotics Inc. All Rights Reserved. Website
         designed by
-        <a href="https://www.marvthe.dev" class="footer__copyright-link"
-          >@marvthedev</a
+        <a href="https://www.marvinmarinas.com" class="footer__copyright-link"
+          >Marvin Marinas</a
         >
       </p>
     </div>

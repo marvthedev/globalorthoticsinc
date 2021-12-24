@@ -33,9 +33,9 @@
     </div>
     <!-- Only visible when viewing with smaller devices. -->
     <div
+      class="nav__menu"
       v-show="menuOpened"
       @click="menuOpened = !menuOpened"
-      class="nav__menu"
     >
       <nuxt-link to="/" class="nav__menu-item">Home</nuxt-link>
       <nuxt-link to="/about" class="nav__menu-item">About</nuxt-link>

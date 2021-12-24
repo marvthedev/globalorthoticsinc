@@ -28,8 +28,8 @@
         >Email *</label
       >
       <input
-        type="text"
         id="contact__form-email-address"
+        type="text"
         class="contact__form-email-address"
       />
 
@@ -37,7 +37,7 @@
       <label for="contact__form-msg" class="contact__form-msg-title"
         >Message *</label
       >
-      <textarea type="text" id="contact__form-msg" class="contact__form-msg" />
+      <textarea id="contact__form-msg" type="text" class="contact__form-msg" />
       <input type="submit" class="contact__form-btn" value="submit" />
     </form>
   </div>
@@ -138,7 +138,19 @@
 @media (min-width: 1248px) {
   .contact {
     padding: 0 30% 15rem 30%;
+    &__title {
+      font-size: 6rem;
+      line-height: 6rem;
+    }
+    &__description {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+    }
     &__form {
+      & input,
+      textarea {
+        font-size: 1.8rem;
+      }
       &-btn {
         width: 20%;
         &:hover {
