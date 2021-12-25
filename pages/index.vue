@@ -12,7 +12,7 @@
           Have Questions or Inquiries? <span>Get in touch with us today!</span>
         </h2>
         <div class="support__contact-links">
-          <nuxt-link to="/about" class="support__contact-btn"
+          <nuxt-link to="/contact" class="support__contact-btn"
             ><img
               src="~/assets/svg/support/message.svg"
               class="support__contact-btn-img"
